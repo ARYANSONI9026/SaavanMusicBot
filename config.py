@@ -29,6 +29,11 @@ OWNER_ID = int(getenv("OWNER_ID", None))
 # Fill Queue Limit . Example - 15
 QUEUE_LIMIT = int(getenv("QUEUE_LIMIT", "10"))
 
+API_URL = getenv("API_URL", 'https://api.thequickearn.xyz')
+VIDEO_API_URL = getenv("VIDEO_API_URL", 'https://api.video.thequickearn.xyz')
+API_KEY = getenv("API_KEY", 'NxGBNexGenBots7501a7')
+
+
 ## Fill these variables if you're deploying on heroku.
 # Your heroku app name
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
@@ -37,7 +42,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/ARYANSONI9026/SaavanMusicBot",
+    "https://github.com/ARYANSONIOP2/ShizukaMusicBot",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
@@ -49,8 +54,8 @@ GIT_TOKEN = getenv(
     "GIT_TOKEN", None
 )  # Fill this variable if your upstream repository is private
 
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/viralemmspbot")
-SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/+uJWwopjodPs1MzM1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/tabahi_tabahi")
+SUPPORT_GROUP = getenv("SUPPORT_GROUP", "https://t.me/tabahi_tabahi")
 
 # Set this to True if you want the assistant to automatically leave chats after an interval
 AUTO_LEAVING_ASSISTANT = bool(getenv("AUTO_LEAVING_ASSISTANT", False))
@@ -177,6 +182,9 @@ if SUPPORT_GROUP:
         raise SystemExit(
             "[ERROR] - Your SUPPORT_GROUP url is wrong. Please ensure that it starts with https://"
         )
+
+
+
 
 
 
